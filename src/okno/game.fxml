@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ovladac.OvladačHry">
+   <children>
+      <FlowPane layoutX="24.0" layoutY="321.0" prefHeight="55.0" prefWidth="552.0">
+         <children>
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btn10" mnemonicParsing="false" onAction="#zmáčknuto" prefHeight="55.0" prefWidth="55.0" styleClass="btn" text="Button">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </children>
+      </FlowPane>
+      <TextField fx:id="textfield" alignment="CENTER" editable="false" layoutX="25.0" layoutY="269.0" prefHeight="38.0" prefWidth="259.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Button layoutX="325.0" layoutY="271.0" mnemonicParsing="false" onAction="#smaž" prefHeight="38.0" prefWidth="119.0" text="Smaž poslední">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="465.0" layoutY="271.0" mnemonicParsing="false" onAction="#enter" prefHeight="38.0" prefWidth="110.0" text="ENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <MenuBar layoutY="1.0">
+        <menus>
+          <Menu fx:id="menukonec" mnemonicParsing="false" text="Hra">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#vygenerujZnovu" text="Vygeneruj znovu" />
+                  <MenuItem fx:id="menuitemkonec" mnemonicParsing="false" onAction="#konec" text="Konec" />
+                  <MenuItem mnemonicParsing="false" onAction="#možnosti" text="Možné slova" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="labelbody" alignment="CENTER" layoutX="268.0" layoutY="7.0" prefHeight="38.0" prefWidth="79.0" text="0" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listview" layoutX="325.0" layoutY="39.0" prefHeight="220.0" prefWidth="250.0" />
+      <TableView fx:id="tableview" editable="true" layoutX="25.0" layoutY="39.0" prefHeight="220.0" prefWidth="259.0">
+        <columns>
+          <TableColumn fx:id="sloupecSlova" prefWidth="183.20001220703125" text="Slovo" />
+          <TableColumn fx:id="sloupecBody" editable="false" prefWidth="75.20001220703125" sortType="DESCENDING" text="Body" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
